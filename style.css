@@ -1,0 +1,49 @@
+html {
+	width: 50%;
+	margin: auto;
+}
+
+@media screen and (max-width: 1279px) {
+	html {
+		width: 90%;
+	}
+}
+
+body {
+	font-family: 'Iosevka', monospace;
+	font-size: 1em !important;
+	background: #282828;
+	color: #ebdbb2;
+}
+
+pre,code {
+	background-color: #3c3836;
+	border: 0;
+	border-radius: 2px;
+}
+
+code {
+	padding: 0.05em;
+}
+
+pre {
+	padding: 0.5em;
+}
+
+a, a:active, a:visited {
+	color: #b16286;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom: 0.1em;
+}
+
+img {
+	width: 100%;
+}
+
+#header a, #header a:active, #header a:visited {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
