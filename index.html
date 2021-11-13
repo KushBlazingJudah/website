@@ -8,52 +8,62 @@
 
     <link rel="stylesheet" href="/style.css" type="text/css" media="all">
     <style type="text/css" media="screen">
-      /* this is specific to this page only, makes no sense to have it somewhere else */
-      html {
-        display: table;
-        width: unset !important; /* this unfucks the floats */
-        height: 100vh;
-        overflow: hidden;
-      }
-      #left {
-        font-size: 3em;
-        font-weight: bold;
-      }
-      /* make this weird layout work */
-      @media only screen and (min-width: 600px) {
-        #left {
-          float: left;
-          font-size: 3em;
-          font-weight: bold;
-        }
-        #right {
-          float: right;
-        }
-      }
-      @media only screen and (max-width: 600px) {
-        #left {
-          text-align: center;
-          width: 100%;
-        }
-      }
-      body {
-        display: table-cell;
-        vertical-align: middle;
-      }
-      #contact {
-        padding-left: 1em;
-      }
+	/* this is specific to this page only, makes no sense to have it somewhere else */
+	html {
+		display: table;
+		width: unset !important; /* this unfucks the floats */
+		height: 100vh;
+		overflow: hidden;
+	}
+	td {
+		vertical-align: top;
+	}
+	#left h1 {
+		margin: 0;
+		font-size: 3em;
+		font-weight: bold;
+	}
+	/* make this weird layout work */
+	@media only screen and (min-width: 600px) {
+		#left {
+			float: left;
+			/*font-size: 3em;
+			font-weight: bold;*/
+		}
+		#right {
+			float: right;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		#left {
+			text-align: center;
+			width: 100%;
+		}
+	}
+	body {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#contact {
+		padding-left: 1em;
+	}
+	#notice {
+	      clear: both;
+	}
     </style>
   </head>
   <body>
-    <div id="left">WSJ</div>
+	<div id="left">
+		<h1>WSJ</h1>
+		<i id="notice">away: busy</i>
+	</div>
     <div id="right">
       <table id="contact">
         <tbody>
           <!-- contact links -->
           <tr>
             <td>email</td>
-            <td>it's on my [<a href="/key.asc">pgp key</a>], encrypt your emails</td>
+            <td>see my [<a href="/key.asc">pgp key</a>]</td>
           </tr>
           <tr>
             <td>matrix</td>
@@ -67,7 +77,7 @@
           </tr>
           <tr>
             <td>discord</td>
-            <td>use <code>WeedSmokingJew#7933</code> as a last resort</td>
+	    <td><code>WeedSmokingJew#7933</code><br>please use IRC or Matrix instead</td>
           </tr>
 
 	  <!-- seperator -->
