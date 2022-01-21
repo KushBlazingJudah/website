@@ -1,102 +1,95 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="interest-cohort=()" http-equiv="Permissions-Policy" />
-    <title>WeedSmokingJew</title>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/style.css" type="text/css" media="all">
-    <style type="text/css" media="screen">
-	/* this is specific to this page only, makes no sense to have it somewhere else */
-	html {
-		display: table;
-		width: unset !important; /* this unfucks the floats */
-		height: 100vh;
-		overflow: hidden;
-	}
-	td {
-		vertical-align: top;
-	}
-	#left h1 {
-		margin: 0;
-		font-size: 3em;
-		font-weight: bold;
-	}
-	/* make this weird layout work */
-	@media only screen and (min-width: 600px) {
-		#left {
-			float: left;
-			/*font-size: 3em;
-			font-weight: bold;*/
-		}
-		#right {
-			float: right;
-		}
-	}
-	@media only screen and (max-width: 600px) {
-		#left {
-			text-align: center;
-			width: 100%;
-		}
-	}
-	body {
-		display: table-cell;
-		vertical-align: middle;
-	}
-	#contact {
-		padding-left: 1em;
-	}
-	#notice {
-	      clear: both;
-	}
-    </style>
-  </head>
-  <body>
-	<div id="left">
-		<h1>WSJ</h1>
-		<i id="notice">away: busy</i>
-	</div>
-    <div id="right">
-      <table id="contact">
-        <tbody>
-          <!-- contact links -->
-          <tr>
-            <td>email</td>
-            <td>see my [<a href="/key.asc">pgp key</a>]</td>
-          </tr>
-          <tr>
-            <td>matrix</td>
-            <td><code>@weedsmokingjew:matrix.org</code></td>
-          </tr>
-          <tr>
-            <td>irc</td>
-            <td><code>WSJ</code> @ <code>irc.rizon.net</code></td>
-	    <!-- i also own soviet and WeedSmokingJew, if either one of those nicks are online and you can't reach me at WSJ, go there
-		 ZNC is pretty comfy btw -->
-          </tr>
-          <tr>
-            <td>discord</td>
-	    <td><code>WeedSmokingJew#7933</code><br>please use IRC or Matrix instead</td>
-          </tr>
+	<title>WSJ</title>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Index"/>
+	<meta property="og:site_name" content="WSJ"/>
+	<meta property="og:description" content="Index page detailing basic information."/>
 
-	  <!-- seperator -->
-          <tr>
-            <td><hr /></td>
-            <td><hr /></td>
-          </tr>
+	<!-- Google is evil. -->
+	<meta content="noindex" name="googlebot" />
+	<meta content="interest-cohort=()" http-equiv="Permissions-Policy" />
 
-          <!-- extra links -->
-          <tr>
-            <td></td>
-	    <td>[<a href="/about.html">about</a>] [<a href="/thoughts.html">views</a>] [<a href="/software.html">stuff i use</a>]</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>[<a href="https://github.com/KushBlazingJudah/website">src</a>] [<a href="https://github.com/KushBlazingJudah">github</a>]</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </body>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<h1>WeedSmokingJew</h1>
+	<!-- p id="away">
+		is <b>away</b>: placeholder
+		<br>
+		I may be slow to respond.
+	</p -->
+
+	<h2>Contact</h2>
+	<p>
+		You are free to contact me.
+		If I ignore you, don't fret.
+		I either haven't gotten to it yet or I have other undisclosed reasons.
+	</p>
+	<ul>
+		<li><b>email</b>: refer to my <a href="key.asc">pgp key</a></li>
+		<li><b>irc</b>: <code>WSJ</code> on <a href="https://rizon.net">Rizon</a> and <a href="https://libera.chat">Libera</a></li>
+		<li><b>matrix</b>: <code>@weedsmokingjew:matrix.org</code> <i>note: seldom used but i still get notifications</i></li>
+		<li><b>discord</b>: <strong>please avoid if at all possible.</strong> <code>WeedSmokingJew#7933</code></li>
+	</ul>
+
+	<h2>What do you do?</h2>
+	<p>
+		I fish lobster and crab in the summer.
+		It's an alright job if you don't mind 4 AM mornings.
+		I do mind them which makes it slightly less of an alright job but I suffer through it.
+
+		I spend my spare time programming, playing games, listening to music, or learning something.
+	</p>
+
+	<h2>What are you doing?</h2>
+	<p>
+		Last update: 2022-01-20
+	</p>
+
+	<p>
+		Right now I am writing a IRC bouncer and client, neither are finished and the latter is being rewritten.
+		Progress on both is slow as things are busy.
+		Also forgetting to do Anki.
+	</p>
+
+	<h2>Notable projects</h2>
+	<p>
+		None public, as none are in working order enough to be public.
+	</p>
+	<p>
+		I have a half-baked IRC client and bouncer written in Go.
+		The former is slowly being rewritten due to some awful design choices made during the client's birth.
+		The latter also has design issues but nowhere near as bad.
+	</p>
+	<p>
+		I have contributed a themes system to <a href="https://github.com/FChannel0/FChannel-Server">fchannel</a>, a federated imageboard.
+		I have also worked on porting it to <a href="https://gofiber.io/">gofiber</a> but ran out of the continuous time chunks I needed.
+		I hope to finish the port one day.
+	</p>
+	<p>
+		I used to run /bpg/, a general on <a href="https://boards.4channel.org/g">/g/</a> for beginner programmers.
+		I have since closed the project indefinitely.
+		<br/>
+		Total joins: 667. Total members before purge: 271. Most members: Around 350.
+		Days survived: 405. Server born on 2020-12-11, closed 2022-01-20.
+	</p>
+
+	<h2>Extras</h2>
+	<ul>
+		<li><a href="articles.html">articles</a></li>
+		<li><a href="thoughts.html">thoughts and views on various topics</a></li>
+		<li><a href="software.html">stuff i use</a></li>
+
+		<li><a href="key.asc">pgp key</a></li>
+
+		<li><a href="https://github.com/KushBlazingJudah">github</a></li>
+		<li><a href="https://github.com/KushBlazingJudah/website">site source</a></li>
+	</ul>
+</body>
 </html>

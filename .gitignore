@@ -1,0 +1,5 @@
+_out/
+drafts/
+articles.html
+articles.html*
+articles/*.html
