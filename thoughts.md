@@ -29,7 +29,8 @@ incoherent.
   - Too bad Matrix is not quite there (but still cool), and IRC too old-school
     for some people. I will continue to be available on all three for now.
   - I wish they didn't ban third party clients because their official client is
-    awful. But everything's legal until you get caught ;-)
+    awful. ~~But everything's legal until you get caught ;-)~~ too bad i did,
+    hopefully not again.
   - Their interface is horrendous. It is designed like a toy for little kids
     with all of these huge buttons that you just can't miss, along with
     upselling Nitro at every opprotunity.
@@ -41,6 +42,9 @@ incoherent.
 - **Google**: A company who threw out their "Don't be evil" motto so they could
   be evil. I could probably fill this entire point with links about Google doing
   evil things and still have plenty of links to go around.
+- **IRC**: super cool. I've pretty much gone to living on there, I also need to
+  work up the courage to join some channels. I'm putting it off until I'm done
+  my IRC bouncer project.
 - **NFTs**: stupid and a waste of money. My buddy says "money laundering".
 - **Smartphones**: They're *okay* if you use them like a dumbphone but with a
   couple of extra capabilities.
@@ -63,6 +67,10 @@ incoherent.
 - **Streaming services**: At the end of the day, it costs the same as cable and
   still has ads. What the hell is the point? It's literally Cable TV 2.0.
 - GB -> Gigabyte. Gb -> Gigabit. gb -> lazy but probably gigabyte.
+- **Plan 9**: cool, but I don't like the people behind 9front even though they
+  seem to be putting out a good product.
+  My main reason for not liking them is because they bring politics into some
+  place where it has no need, and they seem rather adamant about it.
 
 ### Programming
 - Tabs > spaces. I'd rather use one character and set the width of it to

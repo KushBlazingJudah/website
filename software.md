@@ -4,6 +4,8 @@ date: 2022-01-20
 
 # WSJ's Software Stack
 
+![A screenshot of this document in Vim alongside Neofetch](/media/desktop.jpg)
+
 ## Desktop
 My software stack here, while may not be the best, works for me quite well.
 I try to keep the moving parts to a minimum where possible and as a result I've
@@ -17,29 +19,28 @@ well enough for me.
 My dotfiles are not publicly available and probably never will be, but they
 would probably be quite easy to replicate.
 
-Screenshot coming some point.
-
-- **OS**: Artix, Void solely for musl
+- **OS**: Artix and Void.
   - I dual boot both of these distributions actually using one Btrfs partition.
   Yes. One. Subvolume black magic fuckery, really.
-  - I may consider switching off of Artix onto Void soon.
+  I have a document written during the time I was attempting to pull this stunt
+  off that I may eventually publish.
+  - I am switching off of Artix for Void.
   - I prefer source-based distributions but I would also like to not have to
     replace my laptop's fan any time soon.
 - **Colors**: Gruvbox.
   This is largely to do with both the fact that it is visually appealing and
   generally a warm color scheme.
 - **WM**: Sway.
-  - **Bar**: Waybar. It has caused me problems before but they are usually easy
-    to fix.
-    - My bar's style takes huge inspiration from dwm which I daily drove until I
-      switched to Sway.
-    - It isn't a 100% replica but I like what I came out with enough to not
-      care that it isn't 1:1.
+  - **Bar**: none.
   - **Notifications**: Mako.
     - I've in the past considered running no notification daemon as
       notifications are kinda useless, and I don't need one for how many
       notifications I get on a daily basis.
-    - Really, the only thing it's hooked up to is WeeChat.
+    - However once I went [barless](#Barless) I found a use for it: Sway telling
+      me what workspace I'm on and where a window is going.
+      Other uses obviously but that's the most frequent one.
+  - **Terminal**: foot. Previously alacritty, then my own st build, then Luke's
+    st build before he broke it for me.
 - **Editor**
   - **General text editing like this document**: Neovim.
     - It works wonderfully for doing basic text editing but due to past
@@ -63,10 +64,39 @@ Screenshot coming some point.
     - My most major use for this is to sync a portion of my music from my laptop
       to my phone. I use a script I wrote to automate this.
 
+### Barless
+I had to go barless on 2022-01-22 because I was trying to move to Void Linux but
+encountered problems thanks to fractional scaling.
+
+> Why didn't you just set your scale to 1 and then increase font sizes?
+
+I did, that's what I'm using right now actually.
+Here's the problem though: Waybar has no way to vertically center text.
+This drove me insane so I decided that I wouldn't use a bar anymore.
+
+I hacked together a few scripts to replace the bar, installed `wob` to replace
+volume indicators, configured Sway and off I went.
+
+I actually quite like this setup as is.
+
 ## Server
+```
+    _______     finch@ichigo 
+ _ \______ -    ------------ 
+| \  ___  \ |   OS: Void Linux armv7l 
+| | /   \ | |   Host: Raspberry Pi 3 Model B Rev 1.2 
+| | \___/ | |   Packages: 247 (xbps-query) 
+| \______ \_|   Shell: bash 5.1.16 
+ -_______\      Memory: 697MiB / 923MiB 
+```
+
+(The memory usage is from `dnsmasq`)
+
 - **OS**: Void Linux
   - Not the best choice for a server distribution, it's not something stable,
     but the services it hosts aren't *too* crucial.
+    I like Void though, and for whatever reason I never liked Debian.
+    Maybe a certain Canonical ruined it for me.
 - **Services**
   - ZNC. If you've talked to me over IRC, it was through ZNC.
   It is a great piece of software.
@@ -77,7 +107,7 @@ Screenshot coming some point.
       **I do not use this on my main account.** Not that you should care.
       Discord is trash anyway but it's regrettably how I keep up with some
       people.
-  - Unbound DNS server with a hosts file
+  - Unbound DNS server with a hosts file, dnsmasq as cache
   - Wireguard
   - Git server
   - Other much more minor services that don't matter

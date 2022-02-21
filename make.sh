@@ -3,7 +3,7 @@
 # Awfully written script to build the website and place the results in _out.
 # Passes shellcheck.
 
-COPY="index.html style.css key.asc favicon.ico"
+COPY="index.html style.css key.asc favicon.ico media"
 PROCESS="software.md thoughts.md"
 ARTICLES="articles"
 OUT="_out"
@@ -63,7 +63,7 @@ fi
 
 echo "copying static files"
 for file in $COPY; do
-	cp -rv "$file" "$OUT/$file"
+	cp -rv "$file" "$OUT"
 done
 
 echo "processing markdown"
