@@ -71,7 +71,7 @@ EOF
 
 start_catalogue() {
 	cat _header.html - >articles.html.tmp <<EOF
-<h1>Articles</h1>
+<h1>Articles [<a href="/index.rss">RSS</a>]</h1>
 
 <ul>
 EOF
