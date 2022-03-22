@@ -60,7 +60,7 @@ add_catalogue() {
 		<description>$desc</description>
 		<link>$URL/$loc</link>
 		<guid isPermaLink="false">$guid</guid>
-		<pubDate>$date</pubDate>
+		<pubDate>$(date -d "$date" -R)</pubDate>
 	</item>
 EOF
 }
@@ -78,7 +78,7 @@ EOF
 	<title>WeedSmokingJew</title>
 	<description>My RSS feed for articles I write.</description>
 	<link>$URL</link>
-	<lastBuildDate>$(date)</lastBuildDate>
+	<lastBuildDate>$(date -R)</lastBuildDate>
 
 EOF
 }
@@ -110,7 +110,7 @@ echo "processing markdown"
 for file in $PROCESS; do
 	name="$(basename "$file")"
 
-	if [ -e "$name" ] && ! cmp -s "$file" "$OUT/$file"; then
+	if [ ! -e "$name" ] || ! cmp -s "$file" "$OUT/$file"; then
 		echo "explicit process: $name"
 
 		process "$file" > "$OUT/${file%.*}.html"
@@ -123,7 +123,7 @@ start_catalogue
 find "$ARTICLES" -type f -name "*.md" | sort -nr | while read -r file; do
 	name="$OUT/${file%.*}.html"
 
-	if [ -e "$name" ] && ! cmp -s "$file" "$OUT/$file"; then
+	if [ ! -e "$name" ] && ! cmp -s "$file" "$OUT/$file"; then
 		echo "processing article: $(basename "$file")"
 		process "$file" > "$name"
 		cp "$file" "$OUT/$file"
