@@ -11,6 +11,7 @@ It was late when I wrote most of this, sorry if it's too incomprehensible or
 incoherent.
 
 ## Politics
+
 - I'll get this one out of the way.
 - I don't like discussing politics too much in a public setting, even sometimes
   in a private setting depending on the topic and terms of whom I am talking to.
@@ -21,6 +22,7 @@ incoherent.
   intentionally avoid because it ends badly in most cases.
 
 ## Technology
+
 - **Discord**: Awful but I still use it, I actively avoid it when possible past
   2022\. Or sometimes just out of laziness.
   - I still need to use it for some things but really, I hate the damn thing and a
@@ -71,8 +73,10 @@ incoherent.
   seem to be putting out a good product.
   My main reason for not liking them is because they bring politics into some
   place where it has no need, and they seem rather adamant about it.
+- The modern Internet is truly awful.
 
 ### Programming
+
 - Tabs > spaces. I'd rather use one character and set the width of it to
   whatever I feel like than be forced to use an arbitrary amount of spaces.
   Then again, I don't always follow this rule.
@@ -83,6 +87,8 @@ incoherent.
   This is impossible in languages where braces don't exist or in Golang, which I
   use quite a bit.
 - Try to keep things simple even if it will make things slower.
+  Provide the simple implementation as an alternative to the complex
+  implementation.
 - UNIX philosophy of "write programs to do one task and well" is cool.
 - Write applications and services that rely heavily on the Internet to work on
   even the slowest of the connections. Don't assume a symmetrical 10gbit fiber
@@ -94,8 +100,31 @@ incoherent.
     opened before I let go of the mouse.
 - Code shouldn't be executed in the browser. JavaScript is a sin.
 - Electron is garbage and you can't convince me otherwise.
+- Linux sucks but its the only alternative with good hardware support.
+  BSD has bad wireless support, Plan 9 has bad everything support but has the
+  most elegant userspace.
+- POSIX sh is good for one-off scripts but really sucks at just about every
+  other task, with few exceptions.
+  However, implementing programs in it serves as a nice challenge.
+- runit > s6 > sysvinit > OpenRC > everything else.
+- musl > glibc.
+- Alpine is cool but I don't like OpenRC. abuild also kinda sucks.
+- Void is my favorite distribution but falls short in a few places, however all
+  of these places have to do with my personal opinions.
+  Until I have the time to maintain my own distribution, Void will be my home.
+- KISS is cool but the maintainer tends to disappear for some time.
+  The POSIX sh based package manager is really cool but I don't think that the
+  entire package manager should be built in POSIX sh.
+  I'm thinking of giving it a try once again but I think I will reimplement a
+  good chunk of the package manager in a compiled language before I do.
+  I have made a small amount of progress in C.
+  - I may also just completely fork the distro and figure something out myself.
+    This is a good possibility, I like Artix/Void/Gentoo/Alpine/KISS but I want
+    to pull bits and pieces of them all into my own distribution, and KISS would
+    be the best base.
 
 ## Music
+
 - Plunderphonics is still creative when done well.
   Many vaporwave albums prove my point.
 - Speaking of which, please don't just minimally rearrange samples, add effects,
@@ -105,18 +134,27 @@ incoherent.
 - Long songs are cool but don't make songs long for the sole purpose of being a
   long song.
 - I miss Daft Punk and badly.
-- Death's Dynamic Shroud's only good album is I'll Try Living Like This.
-  I do not like any other album but I've also never listened to anything before
-  it.
+  - Discovery > Homework > RAM > Human After All
+- Death's Dynamic Shroud's only good new style album is
+  [I'll Try Living Like This](https://deathsdynamicshroud.bandcamp.com/album/ill-try-living-like-this)
+  [(Vapor Memory)](https://yewtu.be/watch?v=25YqRRvl9gk).
+  I don't care for most of their other albums but their NUWRLD mixtapes are fine
+  every now and then.
+  [Faith in Persona](https://deathsdynamicshroud.bandcamp.com/album/faith-in-persona)
+  [(Vapor Memory)](https://yewtu.be/watch?v=YMiPrlTJIbQ)
+  is my favourite of the series.
 - I will use this as an opportunity to shill 2814's Birth of a New Day.
   It is still easily one of my favorite albums.
 
 ## Misc
+
 - 4AM is less of an ungodly hour than 7AM. Thanks, school.
 - Japan is cool. Japanese, the language, is cool.
   I hope to speak it well one day.
 - Anime is fine in moderation. There's something great about watching comfy
   shows but you couldn't pay me to do it 24/7 let alone more than once a day.
 - The zoomer English slang is awful and I don't understand almost all of it.
-  What I do know, I did not want to learn.
-  It's even worse when adults trying to fit in uses it.
+  What I do know, I did not want to learn. What is this "drip", and why is it
+  bussin fr fr ongod? Why does this strange dialect make me want to commit
+  violent acts against those who speak or type like this?
+  It's even worse when adults use it.

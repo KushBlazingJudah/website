@@ -19,12 +19,11 @@ well enough for me.
 My dotfiles are not publicly available and probably never will be, but they
 would probably be quite easy to replicate.
 
-- **OS**: Artix and Void.
+- **OS**: Void mostly, but also Artix for when glibc is needed.
   - I dual boot both of these distributions actually using one Btrfs partition.
   Yes. One. Subvolume black magic fuckery, really.
   I have a document written during the time I was attempting to pull this stunt
   off that I may eventually publish.
-  - I am switching off of Artix for Void.
   - I prefer source-based distributions but I would also like to not have to
     replace my laptop's fan any time soon.
 - **Colors**: Gruvbox.
@@ -41,26 +40,17 @@ would probably be quite easy to replicate.
       Other uses obviously but that's the most frequent one.
   - **Terminal**: foot. Previously alacritty, then my own st build, then Luke's
     st build before he broke it for me.
-- **Editor**
-  - **General text editing like this document**: Neovim.
-    - It works wonderfully for doing basic text editing but due to past
-      experience, until stuff changes I don't think I'll consider using it as a
-      full on IDE again. Things of course change.
-  - **Programming**: VS Codium.
-    - Emacs was here, but I heavily prefer the LSP of VSC and Emacs only worked
-      some of the time anyway.
-      It probably was my configuration, but it was also near stock Doom Emacs.
-  - I've decided to split the two up as autocompletion in Neovim was slowing
-    down the entire editor to the point where on particularly large projects I
-    could type a line of code, take my hands off the keys, and watch as my
-    keystrokes are slowly entered.
-- **Web Browser**: Librewolf.
-  - I also use `links` occasionally.
+- **Editor**: Neovim.
+  I've previously had a poor experience with it but I've realized the problem
+  was in the plugins I used.
+  It is now my sole editor, for all use cases, 100% of the time, for now.
+- **Web Browser**: Firefox with arkenfox.
+  - I also use `links` and NetSurf occasionally.
 - **Background daemons**:
   - **Music**: mpd/ncmpcpp
     - Library managed by beets
   - **File synchronization**: Syncthing.
-    - Great tool. Has it's issues but still solid.
+    - Great tool. Has its issues but still solid.
     - My most major use for this is to sync a portion of my music from my laptop
       to my phone. I use a script I wrote to automate this.
 
@@ -81,33 +71,32 @@ I actually quite like this setup as is.
 
 ## Server
 ```
-    _______     finch@ichigo 
- _ \______ -    ------------ 
-| \  ___  \ |   OS: Void Linux armv7l 
-| | /   \ | |   Host: Raspberry Pi 3 Model B Rev 1.2 
-| | \___/ | |   Packages: 247 (xbps-query) 
-| \______ \_|   Shell: bash 5.1.16 
- -_______\      Memory: 697MiB / 923MiB 
+  \\  \\ //     finch@ichigo
+ ==\\__\\/ //   ------------
+   //   \\//    OS: NixOS 21.11 (Porcupine) aarch64
+==//     //==   Host: Raspberry Pi 3 Model B
+ //\\___//      Uptime: 14 days, 4 hours, 17 mins
+// /\\  \\==    Packages: 341 (nix-system), 25 (nix-user)
+  // \\  \\     Memory: 275MiB / 890MiB
 ```
 
-(The memory usage is from `dnsmasq`)
-
-- **OS**: Void Linux
-  - Not the best choice for a server distribution, it's not something stable,
-    but the services it hosts aren't *too* crucial.
-    I like Void though, and for whatever reason I never liked Debian.
-    Maybe a certain Canonical ruined it for me.
+- **OS**: NixOS
+  - I've deployed this as an experiment to see how it would run, as I really
+    like the declarative nature of it.
+    It makes server admin a breeze.
+    It has its own problems, and this is still an experiment and nothing
+    permanent since NixOS ARM support kinda sucks in my opinion.
+  - I can't even change settings without a spare NixOS machine because the Pi
+    really doesn't like Nix.
+    20 minutes for `nixos-rebuild switch --fast`.
 - **Services**
-  - ZNC. If you've talked to me over IRC, it was through ZNC.
-  It is a great piece of software.
-  Soon, this may change, a while back I decided to write my own IRC bouncer
-  taking some inspiration from ZNC but with a single-user focus.
+  - Soju, replacing with my own IRC bouncer whenever I finish it.
     - Bitlbee. Initially set up so I don't have to deal with Discord's web
       client on a 60kbps connection, but I've grown fond of it.
       **I do not use this on my main account.** Not that you should care.
       Discord is trash anyway but it's regrettably how I keep up with some
       people.
-  - Unbound DNS server with a hosts file, dnsmasq as cache
+  - DNSmasq as an ad blocker
   - Wireguard
   - Git server
   - Other much more minor services that don't matter
