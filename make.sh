@@ -3,7 +3,7 @@
 # Awfully written script to build the website and place the results in _out.
 # Passes shellcheck.
 
-COPY="index.html style.css key.asc favicon.ico media"
+COPY="style.css key.asc favicon.ico media"
 PROCESS="software.md thoughts.md"
 ARTICLES="articles"
 OUT="_out"
@@ -37,6 +37,21 @@ process() {
 
 	# This isn't a great solution but hey, it works
 	lowdown -Thtml "$1" | cat _header.html - _footer.html | filter_placeholders "$title" "$desc" "$commit" "$commit_date" "$1"
+}
+
+# I have a fortune in index.html that is generated on each invocation of make.sh.
+make_index() {
+	while IFS= read -r line; do
+		# False positive.
+		# shellcheck disable=SC2016
+		if [ "$line" = '$$FORTUNE$$' ]; then
+			echo "Last login: $(date)" # Not quite but close enough.
+			echo '$ fortune -s | cowsay'
+			fortune -s | cowsay | sed -e 's/</&lt;/g;s/>/&gt;/g'
+		else
+			printf '%s\n' "$line"
+		fi
+	done
 }
 
 genuuid() {
@@ -104,6 +119,9 @@ if [ ! -e "$OUT" ]; then
 	mkdir "$OUT"
 	mkdir "$OUT/articles"
 fi
+
+echo "copying index"
+make_index < index.html > "$OUT/index.html"
 
 echo "copying static files"
 for file in $COPY; do
