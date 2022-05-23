@@ -7,6 +7,7 @@ date: 2022-01-20
 ![A screenshot of this document in Vim alongside Neofetch](/media/desktop.jpg)
 
 ## Desktop
+
 My software stack here, while may not be the best, works for me quite well.
 I try to keep the moving parts to a minimum where possible and as a result I've
 settled on a setup that more or less has served me for the past 2 years.
@@ -55,6 +56,7 @@ would probably be quite easy to replicate.
       to my phone. I use a script I wrote to automate this.
 
 ### Barless
+
 I had to go barless on 2022-01-22 because I was trying to move to Void Linux but
 encountered problems thanks to fractional scaling.
 
@@ -70,36 +72,13 @@ volume indicators, configured Sway and off I went.
 I actually quite like this setup as is.
 
 ## Server
-```
-  \\  \\ //     finch@ichigo
- ==\\__\\/ //   ------------
-   //   \\//    OS: NixOS 21.11 (Porcupine) aarch64
-==//     //==   Host: Raspberry Pi 3 Model B
- //\\___//      Uptime: 14 days, 4 hours, 17 mins
-// /\\  \\==    Packages: 341 (nix-system), 25 (nix-user)
-  // \\  \\     Memory: 275MiB / 890MiB
-```
 
-- **OS**: NixOS
-  - I've deployed this as an experiment to see how it would run, as I really
-    like the declarative nature of it.
-    It makes server admin a breeze.
-    It has its own problems, and this is still an experiment and nothing
-    permanent since NixOS ARM support kinda sucks in my opinion.
-  - I can't even change settings without a spare NixOS machine because the Pi
-    really doesn't like Nix.
-    20 minutes for `nixos-rebuild switch --fast`.
-- **Services**
-  - Soju, replacing with my own IRC bouncer whenever I finish it.
-    - Bitlbee. Initially set up so I don't have to deal with Discord's web
-      client on a 60kbps connection, but I've grown fond of it.
-      **I do not use this on my main account.** Not that you should care.
-      Discord is trash anyway but it's regrettably how I keep up with some
-      people.
-  - DNSmasq as an ad blocker
-  - Wireguard
-  - Git server
-  - Other much more minor services that don't matter
+I have two servers on the go: `aka`, and `ichigo`.
+They are a Raspberry Pi 2, and a Raspberry Pi 3 respectively.
+
+`aka` runs Alpine Linux, `ichigo` runs Void Linux.
+Both are responsible for several services, which were previously listed here if
+you care but you probably don't.
 
 ## Phone
 - **OS**: Regrettably, Android.

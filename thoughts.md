@@ -3,6 +3,7 @@ desc: They don't matter that much.
 date: 2022-01-20
 
 # Thoughts
+
 This is an incomplete list of thoughts I hold.
 Remember, they may not necessarily agree with your thoughts and views, and I've
 tried to separate them into appropriate topics that you can skim through.
@@ -12,14 +13,8 @@ incoherent.
 
 ## Politics
 
-- I'll get this one out of the way.
-- I don't like discussing politics too much in a public setting, even sometimes
-  in a private setting depending on the topic and terms of whom I am talking to.
-- Social issues are an even bigger no-no depending on the context, and
-  especially so in more public chatrooms.
-- I actively avoid politics in places where I think it has no place.
-- Some lighter topics I will cover here but heavily controversial topics I will
-  intentionally avoid because it ends badly in most cases.
+- Just stop caring.
+- Turn off the phone, change to a different channel.
 
 ## Technology
 
@@ -69,11 +64,23 @@ incoherent.
 - **Streaming services**: At the end of the day, it costs the same as cable and
   still has ads. What the hell is the point? It's literally Cable TV 2.0.
 - GB -> Gigabyte. Gb -> Gigabit. gb -> lazy but probably gigabyte.
-- **Plan 9**: cool, but I don't like the people behind 9front even though they
-  seem to be putting out a good product.
-  My main reason for not liking them is because they bring politics into some
-  place where it has no need, and they seem rather adamant about it.
+- **Plan 9**: cool, too bad the Raspberry Pi port doesn't have audio.
 - The modern Internet is truly awful.
+- Linux sucks but its the only alternative with good hardware support.
+  BSD has bad wireless support, Plan 9 has bad everything support but has the
+  most elegant userspace.
+- runit > s6 > OpenRC > everything else.
+  But NixOS makes me like systemd.
+- musl > glibc, however glibc > musl in practicality.
+- Alpine is cool but I don't like OpenRC.
+  So I use runit as PID 1 on my desktop Alpine machine. OpenRC is not installed.
+  abuild also kinda sucks.
+- Void is my favorite distribution but falls short in a few places, however all
+  of these places have to do with my personal opinions.
+- KISS is cool but the maintainer tends to disappear for some time.
+  The POSIX sh based package manager is really cool but I don't think that the
+  entire package manager should be built in POSIX sh.
+- NixOS is super cool, but also uses several things I hate.
 
 ### Programming
 
@@ -83,7 +90,7 @@ incoherent.
   This document was written in Markdown and exclusively uses spaces for
   indentation as far as I know.
 - Another rule I like but don't always follow is that braces go under function
-  declarations.
+  declarations. I don't follow it out of laziness most times.
   This is impossible in languages where braces don't exist or in Golang, which I
   use quite a bit.
 - Try to keep things simple even if it will make things slower.
@@ -100,28 +107,10 @@ incoherent.
     opened before I let go of the mouse.
 - Code shouldn't be executed in the browser. JavaScript is a sin.
 - Electron is garbage and you can't convince me otherwise.
-- Linux sucks but its the only alternative with good hardware support.
-  BSD has bad wireless support, Plan 9 has bad everything support but has the
-  most elegant userspace.
 - POSIX sh is good for one-off scripts but really sucks at just about every
   other task, with few exceptions.
   However, implementing programs in it serves as a nice challenge.
-- runit > s6 > sysvinit > OpenRC > everything else.
-- musl > glibc.
-- Alpine is cool but I don't like OpenRC. abuild also kinda sucks.
-- Void is my favorite distribution but falls short in a few places, however all
-  of these places have to do with my personal opinions.
-  Until I have the time to maintain my own distribution, Void will be my home.
-- KISS is cool but the maintainer tends to disappear for some time.
-  The POSIX sh based package manager is really cool but I don't think that the
-  entire package manager should be built in POSIX sh.
-  I'm thinking of giving it a try once again but I think I will reimplement a
-  good chunk of the package manager in a compiled language before I do.
-  I have made a small amount of progress in C.
-  - I may also just completely fork the distro and figure something out myself.
-    This is a good possibility, I like Artix/Void/Gentoo/Alpine/KISS but I want
-    to pull bits and pieces of them all into my own distribution, and KISS would
-    be the best base.
+- LISP looks cool but I can't bring myself to learn it.
 
 ## Music
 
@@ -134,25 +123,15 @@ incoherent.
 - Long songs are cool but don't make songs long for the sole purpose of being a
   long song.
 - I miss Daft Punk and badly.
-  - Discovery > Homework > RAM > Human After All
-- Death's Dynamic Shroud's only good new style album is
-  [I'll Try Living Like This](https://deathsdynamicshroud.bandcamp.com/album/ill-try-living-like-this)
-  [(Vapor Memory)](https://yewtu.be/watch?v=25YqRRvl9gk).
-  I don't care for most of their other albums but their NUWRLD mixtapes are fine
-  every now and then.
-  [Faith in Persona](https://deathsdynamicshroud.bandcamp.com/album/faith-in-persona)
-  [(Vapor Memory)](https://yewtu.be/watch?v=YMiPrlTJIbQ)
-  is my favourite of the series.
-- I will use this as an opportunity to shill 2814's Birth of a New Day.
-  It is still easily one of my favorite albums.
+  - Discovery > Homework = Alive concerts > RAM > Human After All
+- [Albums I like](/tunes.html)
 
 ## Misc
 
 - 4AM is less of an ungodly hour than 7AM. Thanks, school.
 - Japan is cool. Japanese, the language, is cool.
   I hope to speak it well one day.
-- Anime is fine in moderation. There's something great about watching comfy
-  shows but you couldn't pay me to do it 24/7 let alone more than once a day.
+- Anime is fine in moderation.
 - The zoomer English slang is awful and I don't understand almost all of it.
   What I do know, I did not want to learn. What is this "drip", and why is it
   bussin fr fr ongod? Why does this strange dialect make me want to commit

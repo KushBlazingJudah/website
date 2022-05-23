@@ -4,7 +4,7 @@
 # Passes shellcheck.
 
 COPY="style.css key.asc favicon.ico media"
-PROCESS="software.md thoughts.md"
+PROCESS="software.md thoughts.md tunes.md"
 ARTICLES="articles"
 OUT="_out"
 URL="https://wsmj.neocities.org"
