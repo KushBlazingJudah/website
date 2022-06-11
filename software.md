@@ -81,6 +81,7 @@ Both are responsible for several services, which were previously listed here if
 you care but you probably don't.
 
 ## Phone
+
 - **OS**: Regrettably, Android.
   I would've bought a PinePhone but the shipping doubles the cost of the thing
   on top of currency exchange rates making it a more reasonable choice to just
@@ -126,9 +127,23 @@ you care but you probably don't.
   - Syncthing, for my music collection and media captured by my phone's camera
     which is seldom used
   - Vanilla Music to play said music
-  - Revolution IRC to shitpost on the go
-  - Bromite managed by FFUpdater
+  - Termux for Weechat since Revolution IRC is... buggy...
+  - Bromite
   - AnkiDroid for flashcards
-  - Seldom used: OsmAnd+, Termux, Wireguard VPN. Kept for when I need them.
+  - Seldom used: OsmAnd+, Termux, Wireguard VPN, ConnectBot. Kept for when I
+    need them.
   - **That's it.**
 
+I do have a [pmOS](https://postmarketos.org/) phone however it is not my daily
+driver.
+[sxmo](https://sxmo.org) doesn't work very well on it so I decided to just write
+dotfiles myself.
+
+## Networking
+
+I use a private Yggdrasil network to talk to other machines I own without
+worrying about the danger of the open Internet.
+It is quite a useful setup once you have two nodes that are publicly accessible
+to get into your network, since the places I go sometimes block my home IP.
+
+It allows me to access my home network from almost anywhere.

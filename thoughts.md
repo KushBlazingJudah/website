@@ -8,9 +8,6 @@ This is an incomplete list of thoughts I hold.
 Remember, they may not necessarily agree with your thoughts and views, and I've
 tried to separate them into appropriate topics that you can skim through.
 
-It was late when I wrote most of this, sorry if it's too incomprehensible or
-incoherent.
-
 ## Politics
 
 - Just stop caring.
@@ -31,8 +28,9 @@ incoherent.
   - Their interface is horrendous. It is designed like a toy for little kids
     with all of these huge buttons that you just can't miss, along with
     upselling Nitro at every opprotunity.
-  - My CSS is unironically 1000 lines long. All I want is to change the colors,
-    lessen the size of some things, and remove buttons I'll never click.
+    They've gone and broken my CSS every time I came back.
+  - Luckily, I do most of everything from IRC now **on a different account** via
+    Bitlbee.
 - **DRM**: Imagine buying something but not owning it. You don't have full
   rights. You own a license to use the content, but you don't own it. This is
   awful.
@@ -50,22 +48,8 @@ incoherent.
   and a couple other things.
   Of course, you can keep these apps installed if you need to use them but
   really I try to keep use of said apps to a minimum with some exceptions.
-- **Social media**: A cancer of today's society, so bad that I can't even come
-  up with a point that makes it seem all that good.
-  Yes, you can talk to people across the globe, but so can thousands of other
-  services.
-  - I have an odd(?) definition of social media though: any service/platform
-    that has socializing as a core concept that relies on subscription
-    fees/advertising for it's main revenue source.
-    - This includes things like Facebook & co., YouTube, and Discord.
-    - Notice how I said "service/platform". This excludes **protocols** like Matrix
-      and IRC which may be used to offer a core socialization concept and
-      require paid access but the protocol themselves are not at fault.
-- **Streaming services**: At the end of the day, it costs the same as cable and
-  still has ads. What the hell is the point? It's literally Cable TV 2.0.
 - GB -> Gigabyte. Gb -> Gigabit. gb -> lazy but probably gigabyte.
 - **Plan 9**: cool, too bad the Raspberry Pi port doesn't have audio.
-- The modern Internet is truly awful.
 - Linux sucks but its the only alternative with good hardware support.
   BSD has bad wireless support, Plan 9 has bad everything support but has the
   most elegant userspace.
@@ -81,6 +65,48 @@ incoherent.
   The POSIX sh based package manager is really cool but I don't think that the
   entire package manager should be built in POSIX sh.
 - NixOS is super cool, but also uses several things I hate.
+- I have a love/hate relationship with containers. They're super useful yet
+  Docker is such a pain in the ass sometimes.
+  - I've actually gone back and forth about using containers several times now.
+    I'm just happy the tooling is slowly improving now.
+- Cryptocurrencies are cool in concept and nothing more. They do more harm than
+  good, but nonetheless I still have a seldom used wallet of my own.
+- The only reason why people need beefy computers to do even menial tasks now is
+  because of the sheer amount of unnecessary complexity in software produced
+  today.
+  I can do 100% of what I do on my Ryzen laptop on a dual-core Celeron with 4GB
+  of RAM at nearly the same speed. Same workflow, same configuration, no
+  adaptations.
+- The mobile phone ecosystems are awful on both ends of the spectrum.
+  Why is there so much shovelware? Why does it get produced at such an insane
+  rate?
+
+### The Internet
+
+- The modern Internet is truly awful. The only solution to fixing the Internet
+  involves a jerry can, a lighter, and popcorn.
+- **Social media**: A cancer of today's society, so bad that I can't even come
+  up with a point that makes it seem all that good.
+  Yes, you can talk to people across the globe, but so can thousands of other
+  services.
+  - I'm bending the definition, but it excludes **protocols**, not platforms.
+    IRC/XMPP/Matrix are protocols, Discord/Facebook/YouTube are platforms.
+  - The bad stuff only really stems from people's unhealthy attraction to
+    numbers. 
+    I don't care who reads this page, I haven't even looked at the hit
+    number since this site's inception. Nobody could be reading this but I'm
+    happy what I'm doing because I don't care about those meaningless numbers.
+  - The commercialization also ruins the fun of social media. Nothing is real,
+    and the line between content and advertisements is thinning by the day.
+    There are few real humans on social media anymore, everything else is just
+    machines and NPCs.
+- **Streaming services**: At the end of the day, it costs the same as cable and
+  still has ads. What the hell is the point? It's literally Cable TV 2.0.
+- Federation solves a lot of problems, but creates many problems.
+  - ActivityPub could be a lot better.
+  - Not everyone has the spare resources to run their own instance.
+    I still do anyway with Tor.
+- The dead Internet theory is real, I believe it. Call me insane if you wish.
 
 ### Programming
 
@@ -97,20 +123,34 @@ incoherent.
   Provide the simple implementation as an alternative to the complex
   implementation.
 - UNIX philosophy of "write programs to do one task and well" is cool.
+  However, I find I don't have many opportunities to follow it, or following it
+  would lead to huge inefficiencies.
 - Write applications and services that rely heavily on the Internet to work on
   even the slowest of the connections. Don't assume a symmetrical 10gbit fiber
   link with <10ms latency, assume 1mbit download and 0.2mbit up with 200ms
   latency.
 - Same can be applied for applications themselves. Write for a Pentium and 1GB
-  of ram, not for an overclocked 64 core 6GHz beast with a terabyte of memory.
+  of RAM, not for an overclocked 64 core 6GHz beast with a terabyte of memory.
   - Real world example: Word 2016 takes 15 seconds to start yet Word 95 is
     opened before I let go of the mouse.
 - Code shouldn't be executed in the browser. JavaScript is a sin.
+  90% of what JavaScript is used for can be emulated with CSS hacks, which also
+  sucks but at least it doesn't execute untrusted code by default.
+  - Feditext was designed without JavaScript at first and then I slowly worked
+    some in. Sometimes it is necessary, such as for the draggable reply form.
 - Electron is garbage and you can't convince me otherwise.
 - POSIX sh is good for one-off scripts but really sucks at just about every
   other task, with few exceptions.
   However, implementing programs in it serves as a nice challenge.
-- LISP looks cool but I can't bring myself to learn it.
+- Lisp is cool but I can't bring myself to learn it.
+- [Hare](https://harelang.org) is a cool programming language and doesn't
+  deserve a lot of the hate it gets. It's young! Give it some time.
+  - I look forward to when it matures, because I will consider writing future
+    projects in it.
+  - Major blockers right now is lack of 32-bit ARM support, which is bad when
+    all of your servers are all 32-bit ARM.
+  - TLS support would also be extremely nice but I still have things I can do
+    without TLS.
 
 ## Music
 
@@ -137,3 +177,4 @@ incoherent.
   bussin fr fr ongod? Why does this strange dialect make me want to commit
   violent acts against those who speak or type like this?
   It's even worse when adults use it.
+- Most modern games suck.
