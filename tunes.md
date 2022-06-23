@@ -65,6 +65,7 @@ CHANCEデラソウル|(2017) Weekends & Video Games|
 CHANCEデラソウル|(2020) All Together Now!|My favorite album of his, it's a shame it's too short and has a bad ending.
 CHANCEデラソウル|(2020) Goodbye Future Funk|
 CHANCEデラソウル|(2021) CHANCEデラソウル|
+CHANCEデラソウル|(2022) Shine On|Intended to live up to the likes of *All Together Now!*, or at least that's what I remember. I wouldn't compare it to that, however it is still a good album.
 Desired|(2015) Lovestory|
 Desired|(2017) The Sweetest Dream|Favorite album of his.
 Desired|(2018) Timeless|
@@ -81,6 +82,7 @@ Tanuki|(2018) Kanji Title|
 YUNG BAE|(2014) Bae|
 YUNG BAE|(2016) BA3|
 YUNG BAE|(2016) BAE 2|
+Q-Rabbit|(2022) #TRUE FUTURE 3|I had initially tossed #TRUE FUTURE 1 off to the side due to its first song, and as a result this too, but this artist seems to have significantly improved since their first album and I'm happy as a result because this was good for a 2022 album.
 greyl|(2019) SWEET SUMMER TRIP|
 うさこ // kotu|(2021) Love Signal feat. yuca|
 ピンクネオン東京|\*|ミカズキBIGWAVE's label. Has some good tunes.

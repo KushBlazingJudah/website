@@ -13,6 +13,14 @@ tried to separate them into appropriate topics that you can skim through.
 - Just stop caring.
 - Turn off the phone, change to a different channel.
 
+My stance on this comes from another opinion of mine, that I shouldn't care too
+much about things I don't have a hand in anyway.
+Sure, something may suck for me but what can I do about it if it's across the
+world?
+Local stuff is cool though, because you can actually do something about that.
+
+At the end of the day, I just want to grill for God's sake.
+
 ## Technology
 
 - **Discord**: Awful but I still use it, I actively avoid it when possible past
@@ -85,27 +93,24 @@ tried to separate them into appropriate topics that you can skim through.
 
 - The modern Internet is truly awful. The only solution to fixing the Internet
   involves a jerry can, a lighter, and popcorn.
-- **Social media**: A cancer of today's society, so bad that I can't even come
-  up with a point that makes it seem all that good.
-  Yes, you can talk to people across the globe, but so can thousands of other
-  services.
-  - I'm bending the definition, but it excludes **protocols**, not platforms.
-    IRC/XMPP/Matrix are protocols, Discord/Facebook/YouTube are platforms.
-  - The bad stuff only really stems from people's unhealthy attraction to
-    numbers. 
-    I don't care who reads this page, I haven't even looked at the hit
-    number since this site's inception. Nobody could be reading this but I'm
-    happy what I'm doing because I don't care about those meaningless numbers.
-  - The commercialization also ruins the fun of social media. Nothing is real,
-    and the line between content and advertisements is thinning by the day.
-    There are few real humans on social media anymore, everything else is just
-    machines and NPCs.
+  - I've unironically thought of just segregating myself to my own intranet
+    several times, or to limit myself to whatever's on Tor or Yggdrasil or
+    whatever; there's nearly nothing available for me on the public Internet
+    anymore.
 - **Streaming services**: At the end of the day, it costs the same as cable and
   still has ads. What the hell is the point? It's literally Cable TV 2.0.
 - Federation solves a lot of problems, but creates many problems.
   - ActivityPub could be a lot better.
   - Not everyone has the spare resources to run their own instance.
     I still do anyway with Tor.
+- All browsers suck. NetSurf is a graphical browser that doesn't suck as much.
+  The web browsers that suck the least are those of the text-mode family.
+  There's a reason why this site is designed how it is; designed to look nice on
+  graphical browsers while remaining 100% functional on text-mode browsers.
+  - I've actually come to the point where I do a good portion of my web browsing
+    through a text mode web browser.
+  - I've considered setting up a Gopher hole or a Gemini capsule, but haven't
+    yet. I also need to invest in a VPS and a domain to do that.
 - The dead Internet theory is real, I believe it. Call me insane if you wish.
 
 ### Programming
@@ -151,6 +156,7 @@ tried to separate them into appropriate topics that you can skim through.
     all of your servers are all 32-bit ARM.
   - TLS support would also be extremely nice but I still have things I can do
     without TLS.
+- GitHub's "stale" bot is harmful.
 
 ## Music
 
@@ -165,6 +171,35 @@ tried to separate them into appropriate topics that you can skim through.
 - I miss Daft Punk and badly.
   - Discovery > Homework = Alive concerts > RAM > Human After All
 - [Albums I like](/tunes.html)
+- Sidechaining can make a song much more fun, and is often essential when
+  sampling, however can make the result sound horrendous if done poorly.
+  Novice future funk producers are in my view, notoriously bad for this.
+  Every time I come across a song from someone I don't know, somehow they've
+  always managed to make it sound awful by sidechaining the entire song out on
+  every beat for their kick.
+
+## Society
+
+- Everyone worries about the wrong things.
+- Every company says they worry about the right things but actually don't.
+- Nobody actually does anything about the things that do matter.
+- Social media is a cancer of today's society, so bad that I can't even come up
+  with a point that makes it seem all that good.
+  Yes, you can talk to people across the globe, but so can thousands of other
+  services.
+  - I'm bending the definition, but it excludes **protocols**, not platforms.
+    IRC/XMPP/Matrix are protocols, Discord/Facebook/YouTube are platforms.
+  - The bad stuff only really stems from people's unhealthy attraction to
+    numbers. 
+    I don't care who reads this page, I haven't even looked at the hit
+    number since this site's inception. Nobody could be reading this but I'm
+    happy what I'm doing because I don't care about those meaningless numbers.
+    I'd rather waste my time doing things I like than to become a zombie for the
+    algorithm.
+  - The commercialization also ruins the fun of social media. Nothing is real,
+    and the line between content and advertisements is thinning by the day.
+    There are few real humans on social media anymore, everything else is just
+    machines and NPCs.
 
 ## Misc
 

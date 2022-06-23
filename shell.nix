@@ -5,6 +5,7 @@ pkgs.mkShell {
     lowdown
     cowsay
     fortune
+    darkhttpd
 
     ruby # for neocities cli
   ];

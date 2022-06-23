@@ -1,5 +1,8 @@
 _out/
 drafts/
-articles.html
-articles.html*
 articles/*.html
+/*.html
+/.envrc
+*.rss
+*.xml
+/catalog.md
