@@ -1,7 +1,7 @@
 PREFIX ?= ./_out/
 
 COPY = style.css key.asc favicon.ico media
-FILES = software.md thoughts.md tunes.md index.md catalog.md
+FILES = software.md thoughts.md tunes.md index.md catalog.md discord.md
 ARTICLES = $(shell find articles -type f -name "*.md")
 
 all: $(PREFIX) $(PREFIX)articles

@@ -26,8 +26,7 @@ s() {
 	sed	-e "s|%%title%%|$title|g" \
 		-e "s|%%desc%%|$desc|g" \
 		-e "s|%%commit%%|$commit|g" \
-		-e "s|%%date%%|$date|g" \
-		-e "s|%%file%%|/$file|g"
+		-e "s|%%date%%|$date|g"
 }
 
 if [ "$file" = "index.md" ]; then
