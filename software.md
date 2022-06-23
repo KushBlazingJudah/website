@@ -20,13 +20,7 @@ well enough for me.
 My dotfiles are not publicly available and probably never will be, but they
 would probably be quite easy to replicate.
 
-- **OS**: Void mostly, but also Artix for when glibc is needed.
-  - I dual boot both of these distributions actually using one Btrfs partition.
-  Yes. One. Subvolume black magic fuckery, really.
-  I have a document written during the time I was attempting to pull this stunt
-  off that I may eventually publish.
-  - I prefer source-based distributions but I would also like to not have to
-    replace my laptop's fan any time soon.
+- **OS**: NixOS, while I setup my Alpine dotfiles.
 - **Colors**: Gruvbox.
   This is largely to do with both the fact that it is visually appealing and
   generally a warm color scheme.
