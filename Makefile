@@ -4,7 +4,9 @@ COPY = style.css key.asc favicon.ico media
 FILES = software.md thoughts.md tunes.md index.md catalog.md discord.md
 ARTICLES = $(shell find articles -type f -name "*.md")
 
-all: $(PREFIX) $(PREFIX)articles
+all: html
+
+html: $(PREFIX) $(PREFIX)articles
 
 $(PREFIX): $(FILES:.md=.html) $(COPY) index.rss index.xml
 	@if [ ! -e "$@" ]; then mkdir "$@"; fi
@@ -25,11 +27,17 @@ index.xml: $(ARTICLES)
 	@./lib/rss.sh $^ > $@
 
 catalog.md: $(ARTICLES)
+	@printf 'CATALOG\t$@\n'
 	@./lib/catalog.sh $^ > $@
 
 %.html: %.md
 	@printf 'MD\t%s\n' "$<"
 	@lowdown -Thtml "$<" | ./lib/process.sh $< > $@
 
+push: html
+	./lib/neodiff.sh $(PREFIX) | ./lib/neopush.sh $(PREFIX)
+
 clean:
 	rm -rf $(PREFIX) $(FILES:.md=.html) $(ARTICLES:.md=.html) index.rss index.xml catalog.md
+
+.PHONY: clean push

@@ -26,12 +26,15 @@ req() {
 
 req "https://neocities.org/api/list" | jq -r ".files[] | [.path, .sha1_hash] | @tsv" | sort > .tmp
 
-find "$1" -mindepth 1 | while read -r line; do
+# Pop off trailing slash
+# We put one on anyway but this is a no-op if there isn't one which is what I want
+dir="${1%/}"
+find "$dir" -mindepth 1 | while read -r line; do
 	hash=
 	if [ -f "$line" ]; then
 		hash="$(sha1sum "$line")"
 	fi
-	printf '%s	%s\n' "${line#"$1"/}" "${hash%% *}"
+	printf '%s	%s\n' "${line#"$dir"/}" "${hash%% *}"
 done | sort | diff .tmp - | tail -n+4 > .tmp2
 rm .tmp
 

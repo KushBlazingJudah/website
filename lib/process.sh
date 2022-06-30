@@ -16,7 +16,7 @@ else
 	       commit="$(git log -n 1 --pretty=format:%H -- "$file" 2>/dev/null)"
 	       date="$(git log -n 1 --pretty=format:%as -- "$file" 2/dev/null)"
 	else
-		printf "WARN\t'%s' isn't tracked by Git.\n" "$file" >&2
+		[ "$file" != "catalog.md" ] && printf "WARN\t'%s' isn't tracked by Git.\n" "$file" >&2
 	fi
 fi
 
