@@ -1,8 +1,5 @@
 # WeedSmokingJew
 
-is **away**: fishing time.
-Office hours significantly reduced as a result, expect delays.
-
 ## Contact
 
 You are free to contact me.
@@ -26,10 +23,11 @@ I spend my spare time programming, playing games, listening to music, or learnin
 
 ## What are you doing?
 
-Last update: 2022-06-23
+Last update: 2022-08-17
 
-Still fishin'.
-Drowning my sorrows in Arizona iced tea, there was a sale.
+Not enjoying the heat, but also getting used to glasses.
+Working on other things in other places.
+Enjoying life.
 
 ## Notable projects
 
@@ -47,4 +45,3 @@ More to come eventually.
 - [pgp key](key.asc)
 - [github](https://github.com/KushBlazingJudah)
 - [site source](https://github.com/KushBlazingJudah/website)
-

@@ -96,8 +96,8 @@ so I can just install it from there without manually building the dependencies.
 Anyways, I'm writing this from Alpine right now, on my shiny new Runit system
 with its own custom built kernel that uses X11 instead of Wayland, which I had
 up until now been daily driving.[^3]
-I plan to run this system for a while, and maybe I'll even publicize my dotfiles
-this time.[^4]
+I plan to run this system for a while.
+[Here's my dotfiles](https://github.com/KushBlazingJudah/x11-dotfiles)[^4].
 
 I also have plans to write my own initramfs to replace Alpine's, as I would like
 to integrate mine into my custom built kernel.
