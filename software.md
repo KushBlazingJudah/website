@@ -4,37 +4,38 @@ date: 2022-01-20
 
 # WSJ's Software Stack
 
-![A screenshot of this document in Vim alongside Neofetch](/media/desktop.jpg)
+![Current desktop setup](/media/desktop.jpg)
 
 ## Desktop
 
-My software stack here, while may not be the best, works for me quite well.
-I try to keep the moving parts to a minimum where possible and as a result I've
-settled on a setup that more or less has served me for the past 2 years.
+A long time ago, there was X11 and dwm.
+Then there was Sway.
+Now there's X11 and dwm again.
 
-I say more or less, as 1 year ago I transitioned to a Wayland based setup and
-never looked back.
-Despite people saying that it simply isn't ready, I have found that it works
-well enough for me.
+My setup has stayed mostly the same for the past two or three years, with some
+major changes in between but not enough to disrupt my workflow which I've come
+to think that I've perfected for myself in that time.
 
-My dotfiles are not publicly available and probably never will be, but they
-would probably be quite easy to replicate.
+I'll always be nitpicky about my software, and I would like to eventually use
+*mostly* software I've written (or at least worked on) myself pretty much
+everywhere however that is damn near impossible.
 
-- **OS**: NixOS, while I setup my Alpine dotfiles.
+So until I've written several X11 applications, a web browser, coreutils, and
+all of that, I introduce to you, my current setup.
+
+- **OS**: Alpine Linux
+  - I've used pretty much every distribution under the sun at this point, except
+    Debian thanks to a hatred of apt for whatever reason. Never liked it.
 - **Colors**: Gruvbox.
   This is largely to do with both the fact that it is visually appealing and
   generally a warm color scheme.
-- **WM**: Sway.
-  - **Bar**: none.
-  - **Notifications**: Mako.
+- **WM**: My personal [dwm](https://github.com/KushBlazingJudah/dwm) build.
+  - **Notifications**: dunst.
     - I've in the past considered running no notification daemon as
       notifications are kinda useless, and I don't need one for how many
       notifications I get on a daily basis.
-    - However once I went [barless](#Barless) I found a use for it: Sway telling
-      me what workspace I'm on and where a window is going.
-      Other uses obviously but that's the most frequent one.
-  - **Terminal**: foot. Previously alacritty, then my own st build, then Luke's
-    st build before he broke it for me.
+  - **Terminal**: my personal [st](https://github.com/KushBlazingJudah/st)
+    build.
 - **Editor**: Neovim.
   I've previously had a poor experience with it but I've realized the problem
   was in the plugins I used.
@@ -49,28 +50,12 @@ would probably be quite easy to replicate.
     - My most major use for this is to sync a portion of my music from my laptop
       to my phone. I use a script I wrote to automate this.
 
-### Barless
-
-I had to go barless on 2022-01-22 because I was trying to move to Void Linux but
-encountered problems thanks to fractional scaling.
-
-> Why didn't you just set your scale to 1 and then increase font sizes?
-
-I did, that's what I'm using right now actually.
-Here's the problem though: Waybar has no way to vertically center text.
-This drove me insane so I decided that I wouldn't use a bar anymore.
-
-I hacked together a few scripts to replace the bar, installed `wob` to replace
-volume indicators, configured Sway and off I went.
-
-I actually quite like this setup as is.
-
 ## Server
 
 I have two servers on the go: `aka`, and `ichigo`.
 They are a Raspberry Pi 2, and a Raspberry Pi 3 respectively.
+They both run Alpine Linux.
 
-`aka` runs Alpine Linux, `ichigo` runs Void Linux.
 Both are responsible for several services, which were previously listed here if
 you care but you probably don't.
 
@@ -79,36 +64,7 @@ you care but you probably don't.
 - **OS**: Regrettably, Android.
   I would've bought a PinePhone but the shipping doubles the cost of the thing
   on top of currency exchange rates making it a more reasonable choice to just
-  go with an el cheapo $200 Samsung.
-- **A slight rant on my device**
-  - I always laugh whenever I see people complaining about buying a cheap phone
-    like this and complaining when it's slow. You get what you pay for.
-  - I also always laugh whenever people complain about the battery life.
-  - On this device, which had both happen, people complained it was slow, and
-    had poor battery life, *drumroll*
-  - I get an average of a week long battery life and the phone is incredibly
-    snappy once I removed Google apps, which I did 30 minutes after taking the
-    thing out of the box.
-  - It's not the phone that's your problem. It's what's on it and how you use it
-    that drags the thing down.
-    - It is more often than not dragged down by your manufacturer putting bloat
-      on it that you will never use.
-    - I have no interest in Facebook but I can't even uninstall it now???
-    - I have also pulled the week long battery out of an iPhone 5c that had two
-      previous owners and had been ran over by a car.
-  - It works perfectly for my use cases, minus the size. I hate big phones.
-  - True story: Staying at a buddy's place, I had 10% battery to get me through
-    the night that I wasn't going to sleep.
-    At 2am, I fired up IRC, and downloaded multiple episodes of Lucky Star in
-    720p using my buddy's distant WiFi network which topped out at 500kb/s on a
-    good day. It was not one of those good days and I was ~50m away from the AP.
-    The first one was done at 2:20am, which is perfect because at this rate, I
-    can just download an episode while I watch one.
-    I fire up mpv and proceed to download and watch it from 2am to 7am.
-    My battery was now at 6%. I listened to music for an hour and went home,
-    finishing the day off at 2%.
-    Sadly this phone isn't this new anymore so I can't pull a stunt like this
-    with as little resources again but give me 20% and I'll make it work.
+  go with a hand-me-down Samsung flagship, for free.
 - **Apps**
   - This list is intentionally kept short, normally for privacy reasons but this
     is really all I use on my phone that doesn't come out of the box.
@@ -121,15 +77,22 @@ you care but you probably don't.
   - Syncthing, for my music collection and media captured by my phone's camera
     which is seldom used
   - Vanilla Music to play said music
-  - Termux for Weechat since Revolution IRC is... buggy...
+  - [Goguma](https://sr.ht/~emersion/goguma/), the Android companion client to
+    the IRC bouncer I use
   - Bromite
   - AnkiDroid for flashcards
-  - Seldom used: OsmAnd+, Termux, Wireguard VPN, ConnectBot. Kept for when I
-    need them.
+  - Seldom used: OsmAnd+, Termux, Wireguard VPN, ConnectBot, Markor. Kept for
+    when I need them.
   - **That's it.**
 
+On my old phone, people complained about the battery life being so bad.
+On that phone, I removed a lot of bloat, there was no Google anything (asides
+from Android), most Samsung bloat was gone; I was pulling a week of battery life
+out of it at it's prime.
+I also don't use my phone much, that probably helps too.
+
 I do have a [pmOS](https://postmarketos.org/) phone however it is not my daily
-driver.
+driver as there are numerous issues with it.
 [sxmo](https://sxmo.org) doesn't work very well on it so I decided to just write
 dotfiles myself.
 

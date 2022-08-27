@@ -10,7 +10,6 @@ I either haven't gotten to it yet or I have other undisclosed reasons.
 - **email**: refer to my [pgp key](key.asc)
 - **irc**: `WSJ` on [rizon](https://rizon.net), [libera](https://libera.chat), and [OFTC](https://oftc.net)
 - **xmpp**: `wsj@paranoid.network` *otr welcome!* and be patient, i don't know XMPP very well
-- **matrix**: `@weedsmokingjew:matrix.org` *note: seldom used but i still get notifications*
 - **discord**: **please avoid if at all possible.** `WeedSmokingJew#7933`
 
 ## What do you do?
@@ -23,11 +22,10 @@ I spend my spare time programming, playing games, listening to music, or learnin
 
 ## What are you doing?
 
-Last update: 2022-08-17
+Last update: 2022-08-27
 
-Not enjoying the heat, but also getting used to glasses.
-Working on other things in other places.
-Enjoying life.
+Rimworld consumes me.
+I am currently going through a period of rapid exploration of the shoegaze genre.
 
 ## Notable projects
 

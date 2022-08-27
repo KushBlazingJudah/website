@@ -1,26 +1,35 @@
-PREFIX ?= ./_out/
+htmldest ?= ./_html/
+gmidest ?= ./_gmi/
 
-COPY = style.css key.asc favicon.ico media
+COPY = key.asc media
 FILES = software.md thoughts.md tunes.md index.md catalog.md discord.md
 ARTICLES = $(shell find articles -type f -name "*.md")
 
 all: html
 
-html: $(PREFIX) $(PREFIX)articles
+html: $(htmldest) $(htmldest)articles
 
-$(PREFIX): $(FILES:.md=.html) $(COPY) index.rss index.xml
+gmi: $(gmidest) $(gmidest)articles
+
+$(htmldest): $(FILES:.md=.html) $(COPY) index.xml style.css favicon.ico
 	@if [ ! -e "$@" ]; then mkdir "$@"; fi
 	@printf 'CP\t$@\n'
-	@cp -r $^ $(PREFIX)
+	@cp -r $^ $(htmldest)
 
-$(PREFIX)articles: $(ARTICLES:.md=.html)
+$(htmldest)articles: $(ARTICLES:.md=.html)
+	@if [ ! -e "$@" ]; then mkdir -p "$@"; fi
+	@printf 'CP\t$@\n'
+	@cp -r $^ $(htmldest)/articles
+
+$(gmidest): $(FILES:.md=.gmi) $(COPY) index.xml
 	@if [ ! -e "$@" ]; then mkdir "$@"; fi
 	@printf 'CP\t$@\n'
-	@cp -r $^ $(PREFIX)/articles
+	@cp -r $^ $(gmidest)
 
-index.rss: $(ARTICLES)
-	@printf 'RSS\t%s\n' "$@"
-	@./lib/rss.sh $^ > $@
+$(gmidest)articles: $(ARTICLES:.md=.gmi)
+	@if [ ! -e "$@" ]; then mkdir -p "$@"; fi
+	@printf 'CP\t$@\n'
+	@cp -r $^ $(gmidest)/articles
 
 index.xml: $(ARTICLES)
 	@printf 'RSS\t%s\n' "$@"
@@ -31,13 +40,17 @@ catalog.md: $(ARTICLES)
 	@./lib/catalog.sh $^ > $@
 
 %.html: %.md
-	@printf 'MD\t%s\n' "$<"
+	@printf 'HTML\t%s\n' "$<"
 	@lowdown -Thtml "$<" | ./lib/process.sh $< > $@
 
+%.gmi: %.md
+	@printf 'GMI\t%s\n' "$<"
+	@lowdown -tgemini -s "$<" | ./lib/process-gmi.sh $< > $@
+
 push: html
-	./lib/neodiff.sh $(PREFIX) | ./lib/neopush.sh $(PREFIX)
+	./lib/neodiff.sh $(htmldest) | ./lib/neopush.sh $(htmldest)
 
 clean:
-	rm -rf $(PREFIX) $(FILES:.md=.html) $(ARTICLES:.md=.html) index.rss index.xml catalog.md
+	rm -rf $(htmldest) $(gmidest) $(FILES:.md=.html) $(ARTICLES:.md=.html) $(FILES:.md=.gmi) $(ARTICLES:.md=.gmi) index.xml catalog.md
 
 .PHONY: clean push

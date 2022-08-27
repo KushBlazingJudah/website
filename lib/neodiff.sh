@@ -35,7 +35,7 @@ find "$dir" -mindepth 1 | while read -r line; do
 		hash="$(sha1sum "$line")"
 	fi
 	printf '%s	%s\n' "${line#"$dir"/}" "${hash%% *}"
-done | sort | diff .tmp - | tail -n+4 > .tmp2
+done | sort | diff -u .tmp - | tail -n+4 > .tmp2
 rm .tmp
 
 add=""

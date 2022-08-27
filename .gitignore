@@ -1,8 +1,10 @@
-_out/
+/_html/
+/_gmi/
 drafts/
-articles/*.html
+/articles/*.html
+/articles/*.gmi
 /*.html
+/*.gmi
 /.envrc
-*.rss
 *.xml
 /catalog.md

@@ -4,9 +4,6 @@ description: Cool music.
 # Tunes
 
 Nothing here is definitive and most sections here will never be complete.
-However, you can take this as a guide for various genres, whatever's listed here
-at any given point in time.
-
 Generally, all of this is just albums I like in no particular order.
 
 Send recommendations if you wish.
@@ -14,6 +11,16 @@ Send recommendations if you wish.
 **ACHTUNG!**
 This page contains large amounts of CJK characters.
 If you see tofu (boxes), you just don't have the fonts.
+
+# Top 5
+
+I can't think of another 5 to make it a top 10.
+
+1. My Bloody Valentine - Loveless
+2. 2814 - Birth of a New Day
+3. 死んだ僕の彼女 - Hades
+4. Pink Floyd - Animals
+5. Pink Floyd - Wish You Were Here
 
 # Vaporwave
 
@@ -57,7 +64,7 @@ I have a generally low view of the current state of Future Funk, which is a
 shame because this is one of my favorite genres.
 But nobody does it really well anymore, and those who did fell off in a bad way.
 I dream of a resurgence of "good" Future Funk but I'm sure that my dreams will
-be in vein.
+be in vain.
 
 Artist|Album|Comment
 :--|:--|:--
@@ -142,40 +149,13 @@ Woefully incomplete.
 
 Artist|Album|Comment
 :--|:--|:--
+Duster|(1998) Stratosphere|
 Iron Maiden|(1984) Powerslave|
-My Bloody Valentine|\*|Thank you /g/ desktop threads for introducing this band to me.
+My Bloody Valentine|\*|Thank you /g/ desktop threads for introducing this band to me. Loveless was my intro to shoegaze; initially hated it, gave it another shot and it's now my favorite album.
 Pink Floyd|\*|
 Van Halen|\*|
 Weezer|(1994) Weezer|
 Weezer|(1996) Pinkerton|
-
-# Japanese music
-
-Mishmash of albums I remember were good from my music library.
-
-Artist|Album|Comment
-:--|:--|:--
-Casiopea|(1982) Mint Jams|
-中原めいこ|(1982) 2時までのシンデレラ-FRIDAY MAGIC-|
-中原めいこ|(1983) mint|
-中原めいこ|(1988) 鏡の中のアクトレス|
-大橋純子|(1984) Magical|
-大貫妙子|(1977) SUNSHOWER|
-山下達郎|(1980) RIDE ON TIME|
-山下達郎|(1982) FOR YOU|
-山下達郎|(1984) Big Wave|
-杏里|(1983) Timely!!|
-竹内まりや|(1980) Miss M|
-竹内まりや|(1984) Variety|
-
-# Other
-
-Things that don't deserve a category on their own, but still are worth listing.
-Woefully incomplete.
-
-Artist|Album|Comment
-:--|:--|:--
-Daft Punk|(1997) Homework|
-Daft Punk|(2001) Discovery|Best album, Interstella 5555 was an experience too. Watch it.
-Daft Punk|(2007) Alive 2007|I've listened to this too many times.
-Stardust|(1998) Music Sounds Better With You|
+死んだ僕の彼女|(2010) Ixtab|
+死んだ僕の彼女|(2012) Underdrawing for Three Forms of Unhappiness at the State of Existence|
+死んだ僕の彼女|(2015) Hades|My introduction to this band. People said Japanese shoegaze was cool, they're damn right. Or at least this band is.
