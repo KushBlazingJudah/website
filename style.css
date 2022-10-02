@@ -1,27 +1,49 @@
 html {
-	width: 50rem;
-	max-width: 96%;
+	padding: 0;
+	margin: 0;
+	width: 100%;
 
-	margin: auto;
+	background: url(data:image/bmp;base64,Qk3kAAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAADAAAAABAAAAAQAAAAAAAAAAAAAAx/H7stvrstvrstvrstvrstvrstvrx/H7stvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrstvrx/H7stvrstvrstvrstvrstvrstvrx/H7) repeat;
 }
 
 body {
-	padding: 1em;
-
 	font-family: sans-serif;
 	font-size: 1rem;
 	line-height: 1.25;
+	box-sizing: border-box;
 
-	background-color: white;
-	color: black;
+	margin: auto;
+	padding: 1em;
+
+	background: #fbf1c7;
+	color: #3c3836;
+
+	width: 50rem;
+	max-width: 96%;
+	min-height: 100vh;
 }
 
-table { width: 100%; table-layout: fixed; }
-table, table th, table tr, table td { border: 1px solid black; border-collapse: collapse; }
+::selection {
+	background-color: #3c3836;
+	color: #fbf1c7;
+}
+
+table { width: 100%; table-layout: fixed; margin-top: 1em; margin-bottom: 1em; }
+table, table th, table tr, table td {
+	border: 1px solid #3c3836;
+	border-collapse: collapse;
+	padding: 4px; padding-left: 8px; padding-right: 8px;
+}
+table th { background: #928374; }
+table tr { background: #ebdbb2; }
+table tr:nth-child(odd) { background: #d5c4a1; }
 hr { border: 0; border-top: 1px solid black; }
 h1,h2,h3 { margin-bottom: 0; }
 p { margin-bottom: 0; }
-pre { background: #eee; padding: 1em; }
+pre { background: #f9f5d7; padding: 1em; }
+a, a:active, a:visited { color: #b16286; }
+a:hover { color: #8f3f71; }
+hr { border-color: #3c3836; }
 
 header {
 	font-size: 1.25em;
@@ -66,3 +88,26 @@ code {
 }
 
 .right { float: right; }
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background: url(data:image/bmp;base64,Qk3kAAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAADAAAAABAAAAAQAAAAAAAAAAAAAAKCgoISAdISAdISAdISAdISAdISAdKCgoISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdISAdKCgoISAdISAdISAdISAdISAdISAdKCgo) repeat;
+	}
+
+	body {
+		background: #282828;
+		color: #ebdbb2;
+	}
+
+	pre { background: #3c3836; padding: 1em; }
+	table, table th, table tr, table td { border: 1px solid #ebdbb2; }
+	table th { background: #928374; color: #3c3836; }
+	table tr { background: #3c3836; }
+	table tr:nth-child(odd) { background: #504945; }
+	hr { border-color: #ebdbb2; }
+
+	::selection {
+		background: #ebdbb2;
+		color: #1d2021;
+	}
+}

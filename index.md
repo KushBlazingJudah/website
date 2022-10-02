@@ -1,5 +1,17 @@
 # WeedSmokingJew
 
+```
+$ fortune -s | cowsay
+[[COWSAY]]
+```
+
+Hi, I program things in my free time and listen to an absurd amount of music.
+I try to run as much free software as I can, and maintain a couple of projects
+of my own.
+
+You may find me in various dark and dusty corners of the Internet, usually under
+the moniker Anonymous.
+
 ## Contact
 
 You are free to contact me.
@@ -10,15 +22,6 @@ I either haven't gotten to it yet or I have other undisclosed reasons.
 - **email**: refer to my [pgp key](key.asc)
 - **irc**: `WSJ` on [rizon](https://rizon.net), [libera](https://libera.chat), and [OFTC](https://oftc.net)
 - **xmpp**: `wsj@paranoid.network` *otr welcome!* and be patient, i don't know XMPP very well
-- **discord**: **please avoid if at all possible.** `WeedSmokingJew#7933`
-
-## What do you do?
-
-I fish lobster and crab in the summer.
-It's an alright job if you don't mind 4 AM mornings.
-I do mind them which makes it slightly less of an alright job but I suffer through it.
-
-I spend my spare time programming, playing games, listening to music, or learning something.
 
 ## What are you doing?
 

@@ -33,5 +33,5 @@ if [ "$file" = "index.md" ]; then
 	title="WSJ"
 	cat lib/header.html - lib/footer.html | s
 else
-	cat lib/header.html lib/header_body.html - lib/footer.html lib/footer_body.html | s
+	cat lib/header.html lib/header_body.html - lib/footer_body.html lib/footer.html | s
 fi

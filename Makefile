@@ -43,6 +43,17 @@ catalog.md: $(ARTICLES)
 	@printf 'HTML\t%s\n' "$<"
 	@lowdown -Thtml "$<" | ./lib/process.sh $< > $@
 
+
+# This sucks but I liked having it.
+index.html: index.md
+	@printf 'INDEX\t%s\n' "$<"
+	@while IFS= read -r line; do \
+		case "$$line" in \
+			\[\[COWSAY\]\]) fortune -s | cowsay ;; \
+			*) printf '%s\n' "$$line" ;; \
+		esac \
+	done < "$<" | lowdown -Thtml | ./lib/process.sh $< > $@
+
 %.gmi: %.md
 	@printf 'GMI\t%s\n' "$<"
 	@lowdown -tgemini -s "$<" | ./lib/process-gmi.sh $< > $@
