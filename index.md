@@ -25,10 +25,20 @@ I either haven't gotten to it yet or I have other undisclosed reasons.
 
 ## What are you doing?
 
-Last update: 2022-08-27
+Last update: 2022-10-22
 
-Rimworld consumes me.
-I am currently going through a period of rapid exploration of the shoegaze genre.
+Still listening to shoegaze, and I still have a huge list of albums to listen
+to.
+Still playing Rimworld, albeit a bit less.
+
+I've been focusing my attention elsewhere for the past little while, and will
+continue doing so for some time, however I do have projects in the works.
+They'll just take longer to finish.
+
+Additionally, I'm trying to expand my horizons past Go.
+Go has served me *extremely well*, but all of the projects I've written that
+matter are written in Go.
+Isn't it about time I shift gears into something else?
 
 ## Notable projects
 
