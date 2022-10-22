@@ -1,7 +1,7 @@
 htmldest ?= ./_html/
 gmidest ?= ./_gmi/
 
-COPY = key.asc media
+COPY = key.asc media fchan.json
 FILES = software.md thoughts.md tunes.md index.md catalog.md discord.md
 ARTICLES = $(shell find articles -type f -name "*.md")
 

@@ -3,6 +3,8 @@
 # Generates catalog.md.
 
 cat <<EOF
+title: Articles
+
 # Articles [[RSS](/index.xml)]
 
 EOF

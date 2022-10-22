@@ -134,7 +134,7 @@ Hong Kong Express|(2021) L.Y.F|
 Kuroi Ame|(2019) Sacred|
 Rashida Prime|(2016) Calculus|
 Sangam|(2016) You Forget This|Need to listen to more.
-desert sans feels warm at night|**TODO**|But most of his albums are good.
+desert sands feels warm at night|**TODO**|But most of his albums are good.
 w u s o 命|(2016) Lonely Streets|
 w u s o 命|(2017) Hold It Together|
 沙漠里的沙子晚上很温暖|(2019) Tomorrow, 2096|
