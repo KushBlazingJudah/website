@@ -42,6 +42,7 @@ Isn't it about time I shift gears into something else?
 
 ## Notable projects
 
+- [boorumux](https://github.com/KushBlazingJudah/boorumux): booru aggregator
 - [feditext](https://github.com/KushBlazingJudah/feditext): a federated textboard
 - [uopds](https://github.com/KushBlazingJudah/uopds): dead simple OPDS server
 
