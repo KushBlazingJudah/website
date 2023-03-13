@@ -6,6 +6,21 @@ title: Discord FAQ
 There isn't much here but if you want to look through it for some godawful
 reason you can.
 
+## Notice
+
+**This document is obsolete.**
+It remains here for future reference and serves no use currently; my apologies
+if you got here by accident.
+I no longer use this setup and instead will now use the official Discord client
+under the same account my alt would've been on.
+
+Development of any of the software I've used seems to have more or less stalled
+and it doesn't work properly in some fashion; I'm looking into writing a
+replacement myself but taking on a project like this is not at the top of my
+work queue.
+
+## Original content
+
 I've gotten asked a handful of times on why I use Discord like I do, so here's a
 quick explainer:
 

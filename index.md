@@ -1,4 +1,4 @@
-# WeedSmokingJew
+# WSJ
 
 ```
 $ fortune -s | cowsay
@@ -8,6 +8,10 @@ $ fortune -s | cowsay
 Hi, I program things in my free time and listen to an absurd amount of music.
 I try to run as much free software as I can, and maintain a couple of projects
 of my own.
+
+My favourite/most well known programming languages are Go and Lua, but I also
+know bits and pieces of C and Python but consider myself a master of neither.
+I work with POSIX sh, HTML, CSS, and JavaScript begrudgingly.
 
 You may find me in various dark and dusty corners of the Internet, usually under
 the moniker Anonymous.
@@ -20,33 +24,39 @@ I either haven't gotten to it yet or I have other undisclosed reasons.
 
 - **`$TZ`**: `America/Halifax`
 - **email**: refer to my [pgp key](key.asc)
-- **irc**: `WSJ` on [rizon](https://rizon.net), [libera](https://libera.chat), and [OFTC](https://oftc.net)
-- **xmpp**: `wsj@paranoid.network` *otr welcome!* and be patient, i don't know XMPP very well
+- **irc**: `WSJ` on [rizon][rizon], [libera][libera], and [OFTC][oftc]
+- **xmpp**: `wsj@paranoid.network`. I don't know XMPP very well.
+
+[rizon]: https://rizon.net
+[libera]: https://libera.chat
+[oftc]: https://oftc.net
 
 ## What are you doing?
 
-Last update: 2022-10-22
+Last update: 2023-03-12
 
-Still listening to shoegaze, and I still have a huge list of albums to listen
-to.
-Still playing Rimworld, albeit a bit less.
+Alive, but focusing most my time elsewhere.
 
-I've been focusing my attention elsewhere for the past little while, and will
-continue doing so for some time, however I do have projects in the works.
-They'll just take longer to finish.
+Due to the breakdown of the display assembly on my main laptop, a 2016 ASUS
+Chromebook C202SA I bought off of a friend for $50 has become my main computer.
 
-Additionally, I'm trying to expand my horizons past Go.
-Go has served me *extremely well*, but all of the projects I've written that
-matter are written in Go.
-Isn't it about time I shift gears into something else?
+Working on a fork of FChannel in private, to be released soon.
 
 ## Notable projects
 
-- [boorumux](https://github.com/KushBlazingJudah/boorumux): booru aggregator
-- [feditext](https://github.com/KushBlazingJudah/feditext): a federated textboard
-- [uopds](https://github.com/KushBlazingJudah/uopds): dead simple OPDS server
+- [boorumux][ft] + [localbooru][lbru]: booru server/aggregator combo. WIP.
+- fedichan (upcoming): federated imageboard, a continuation of [FChannel][fc]
+- [feditext][ft]: a federated textboard
+- [uopds][opds]: dead simple OPDS server. Abandoned.
 
-More to come eventually.
+[bmux]: https://github.com/KushBlazingJudah/boorumux
+[ft]: https://github.com/KushBlazingJudah/feditext
+[lbru]: https://github.com/KushBlazingJudah/localbooru
+[opds]: https://github.com/KushBlazingJudah/uopds
+[fc]: https://github.com/FChannel0/FChannel-Server
+
+More to come eventually, but know that these projects are just ones I don't
+want to associate with my real name.
 
 ## Extras
 
